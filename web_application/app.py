@@ -34,6 +34,7 @@ def index():
         feature_list.append(len(touchscreen))
         feature_list.append(len(ips))
 
+        # get the lists values
         company_list = ['acer','apple','asus','dell','hp','lenovo','msi','other','toshiba']
         typename_list = ['2in1convertible','gaming','netbook','notebook','ultrabook','workstation']
         opsys_list = ['linux','mac','other','windows']
@@ -56,7 +57,7 @@ def index():
         traverse_list(gpu_list, gpu)
 
         pred_value = prediction(feature_list)
-        
+
         # To covert to the LKR
         pred_value = np.round(pred_value[0],2)*221
 
