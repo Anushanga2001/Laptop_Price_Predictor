@@ -5,6 +5,8 @@ import numpy as np
 # setup application
 app = Flask(__name__)
 
+# set  up
+
 # connect the pickel file
 def prediction(lst):
     filename = 'model/predictor.pickle'
